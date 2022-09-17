@@ -13,5 +13,83 @@
   <body>
     <h1>HTML Form</h1>
     <script type="text/javascript" src="./main.js"></script>
+    <fieldset>
+      <legend>Personal information</legend>
+      <label for="surname">Surname:</label>
+      <input
+        type="text"
+        id="surname"
+        name="surname"
+        value=""
+        autocomplete="off"
+      />
+      <br />
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" value="" autocomplete="off" />
+      <br />
+      <label for="yearold">How old are you?</label>
+      <input
+        type="text"
+        id="yearold"
+        name="yearold"
+        value="12"
+        min="1"
+        max="100"
+      />
+      <br />
+      <lable for="birthDay">Full date of birth</lable>
+      <input type="date" id="birthDay" name="birthDay" value="mm/dd/yyyy" />
+      <br />
+      <label for="accept">I accept the term of the agreement</label>
+      <input type="checkbox" />
+    </fieldset>
+    <fieldset>
+      <legend>Registration</legend>
+      <label for="email">E-mail:</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        value="email@example.com"
+        autocomplete="off"
+      />
+      <br />
+      <label for="password">Pasword</label>
+      <input type="text" id="password" name="password" autocomplete="off" />
+    </fieldset>
+    <fieldset>
+      <legend>An interesting fact fir you!</legend>
+      <label for="cats"> Do you love cats? </label>
+      <input type="radio" name="cats" />Yes <input type="radio" name="cats" />No
+      <br />
+      <label for="color"> What is your favorite color? </label>
+      <input type="color" name="color" value="#fff" />
+      <br />
+      <label for="timeSlip"> What time to you go to bad? </label>
+      <input type="time" name="timeSlip" step="1" />
+      <br />
+      <label for="cars"> What are yor favorit brand of cars? </label>
+      <select name="cars">
+        <option value="BMW">BMW</option>
+        <option value="AUDI">AUDI</option>
+        <option value="Lada">Lada</option>
+      </select>
+      <br />
+      <label name="work"> How do you rate our work? </label>
+      <input name="work" type="range" min="1" max="10" step="1" value="1" />
+    </fieldset>
+    <fieldset>
+      <legend>Additional info:</legend>
+      <label name="comments"> Comments </label>
+      <textarea name="comments" rows="2" cols="30px" autocomplete="off">
+      </textarea>
+      <br />
+      <label for="recommend"> Woul you recommend us? </label>
+      <select name="recommend" id="recommend">
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+      </select>
+    </fieldset>
+    <button type="submit">Submit</button>
   </body>
 </html>
